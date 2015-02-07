@@ -13,6 +13,8 @@
 		775FBBE91A85833400CA8345 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 775FBBE81A85833400CA8345 /* Images.xcassets */; };
 		775FBBEC1A85833400CA8345 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 775FBBEA1A85833400CA8345 /* LaunchScreen.xib */; };
 		775FBBF81A85833500CA8345 /* RottenTomatoesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775FBBF71A85833500CA8345 /* RottenTomatoesTests.swift */; };
+		775FBC021A85A98A00CA8345 /* MovieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775FBC011A85A98A00CA8345 /* MovieTableViewCell.swift */; };
+		775FBC041A85B01300CA8345 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775FBC031A85B01300CA8345 /* MovieDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		775FBBF11A85833500CA8345 /* RottenTomatoesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RottenTomatoesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		775FBBF61A85833500CA8345 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		775FBBF71A85833500CA8345 /* RottenTomatoesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RottenTomatoesTests.swift; sourceTree = "<group>"; };
+		775FBC011A85A98A00CA8345 /* MovieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieTableViewCell.swift; sourceTree = "<group>"; };
+		775FBC031A85B01300CA8345 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				775FBBE81A85833400CA8345 /* Images.xcassets */,
 				775FBBEA1A85833400CA8345 /* LaunchScreen.xib */,
 				775FBBDF1A85833400CA8345 /* Supporting Files */,
+				775FBC011A85A98A00CA8345 /* MovieTableViewCell.swift */,
+				775FBC031A85B01300CA8345 /* MovieDetailsViewController.swift */,
 			);
 			path = RottenTomatoes;
 			sourceTree = "<group>";
@@ -212,8 +218,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				775FBC041A85B01300CA8345 /* MovieDetailsViewController.swift in Sources */,
 				775FBBE41A85833400CA8345 /* ViewController.swift in Sources */,
 				775FBBE21A85833400CA8345 /* AppDelegate.swift in Sources */,
+				775FBC021A85A98A00CA8345 /* MovieTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
