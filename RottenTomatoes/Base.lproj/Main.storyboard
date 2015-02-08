@@ -26,18 +26,21 @@
         <scene sceneID="eSn-7Z-vkY">
             <objects>
                 <tableViewController id="CGY-A8-pTM" customClass="ViewController" customModule="RottenTomatoes" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="83" sectionHeaderHeight="22" sectionFooterHeight="22" id="2kE-LU-Xz2">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="102" sectionHeaderHeight="22" sectionFooterHeight="22" id="2kE-LU-Xz2">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="olgaa.mycell" rowHeight="83" id="uhQ-Zj-Z7f" customClass="MovieTableViewCell" customModule="RottenTomatoes" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="olgaa.mycell" rowHeight="102" id="uhQ-Zj-Z7f" customClass="MovieTableViewCell" customModule="RottenTomatoes" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uhQ-Zj-Z7f" id="iwy-5Z-Acq">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xcj-JP-iLV">
+                                            <rect key="frame" x="16" y="3" width="61" height="91"/>
+                                        </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Movie Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kXQ-Yg-jtP">
-                                            <rect key="frame" x="32" y="17" width="552" height="21"/>
+                                            <rect key="frame" x="88" y="4" width="437" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
@@ -45,6 +48,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="movieThumbnail" destination="xcj-JP-iLV" id="ie1-cK-DMF"/>
                                     <outlet property="movieTitleLabel" destination="kXQ-Yg-jtP" id="C8A-L8-a0e"/>
                                     <segue destination="xmS-JH-o37" kind="show" id="rXq-w5-X0b"/>
                                 </connections>
@@ -59,12 +63,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tte-pC-z8p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="725" y="234"/>
+            <point key="canvasLocation" x="725" y="229"/>
         </scene>
-        <!--View Controller-->
+        <!--Movie Details View Controller-->
         <scene sceneID="utt-bc-jhI">
             <objects>
-                <viewController id="xmS-JH-o37" sceneMemberID="viewController">
+                <viewController id="xmS-JH-o37" customClass="MovieDetailsViewController" customModule="RottenTomatoes" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9gs-xi-6Ti"/>
                         <viewControllerLayoutGuide type="bottom" id="0P3-ni-nAt"/>

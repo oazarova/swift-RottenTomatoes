@@ -9,7 +9,8 @@
 import UIKit
 
 class MovieDetailsViewController: UIViewController {
-    var movieDictionary: NSDictionary?
+    var movieDictionary: [NSDictionary]! = []
+    var movieIndex: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -10,7 +10,8 @@ import UIKit
 
 class ViewController: UITableViewController{
     
-    var moviesArray : NSArray?
+    var moviesArray : [NSDictionary]!
+    var selectedIndex = 0
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
@@ -20,7 +21,7 @@ class ViewController: UITableViewController{
         NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue(), completionHandler:{ (response, data, error) in
             var errorValue: NSError? = nil
             let dictionary = NSJSONSerialization.JSONObjectWithData(data, options: nil, error: &errorValue) as NSDictionary
-            self.moviesArray = dictionary["movies"] as? NSArray
+            self.moviesArray = dictionary["movies"] as? [NSDictionary]
             self.tableView.reloadData()
         })
     }
@@ -37,15 +38,26 @@ class ViewController: UITableViewController{
         let movie = self.moviesArray![indexPath.row] as NSDictionary
         let cell = tableView.dequeueReusableCellWithIdentifier("olgaa.mycell") as MovieTableViewCell
         cell.movieTitleLabel.text = movie["title"] as NSString
-
+        
+        // Get url's for movie posters
+        var posters = movie["posters"] as NSDictionary
+        var posterURL = posters["thumbnail"] as String
+        
+        let url = NSURL(string: posterURL)
+        let data = NSData(contentsOfURL: url!)
+        cell.movieThumbnail.image = UIImage(data: data!)
         return cell
     }
-
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let details = MovieDetailsViewController()
-        let movie = self.moviesArray![indexPath.row] as NSDictionary
-        details.movieDictionary = movie
-        self.navigationController?.pushViewController(details, animated: true)
+  
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let selectedIndex = self.tableView.indexPathForCell(sender as UITableViewCell)!
+        // Pass movie details to the movieDetailsViewController
+        var movieDetailsViewController: MovieDetailsViewController = segue.destinationViewController as MovieDetailsViewController
+        //var movie = self.moviesArray![selectedIndex.row]
+        movieDetailsViewController.movieDictionary = moviesArray
+        movieDetailsViewController.movieIndex = selectedIndex.row
+        
     }
 }
 
