@@ -12,9 +12,21 @@ class MovieDetailsViewController: UIViewController {
     var movieDictionary: [NSDictionary]! = []
     var movieIndex: Int = 0
     
+    @IBOutlet weak var moviePoster: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let movie = movieDictionary[movieIndex]
+
+        // Get url's for movie posters
+        var posters = movie["posters"] as NSDictionary
+        var posterURL = posters["detailed"] as String
+        let originalImage = posterURL.stringByReplacingOccurrencesOfString("tmb", withString: "ori", options: NSStringCompareOptions.LiteralSearch, range: nil)
+        
+        let url = NSURL(string: originalImage)
+        //let data = NSData(contentsOfURL: url!)
+        moviePoster.setImageWithURL(url)
         // Do any additional setup after loading the view.
     }
 

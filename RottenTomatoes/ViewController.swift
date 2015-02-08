@@ -46,6 +46,7 @@ class ViewController: UITableViewController{
         let url = NSURL(string: posterURL)
         let data = NSData(contentsOfURL: url!)
         cell.movieThumbnail.image = UIImage(data: data!)
+        cell.movieSynopsisLabel.text = movie["synopsis"] as NSString
         return cell
     }
   
