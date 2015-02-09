@@ -14,6 +14,8 @@
 		775FBBF81A85833500CA8345 /* RottenTomatoesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775FBBF71A85833500CA8345 /* RottenTomatoesTests.swift */; };
 		775FBC041A85B01300CA8345 /* MovieDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775FBC031A85B01300CA8345 /* MovieDetailsViewController.swift */; };
 		77F43D781A88C47700FEF24C /* DVDMoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F43D771A88C47700FEF24C /* DVDMoviesViewController.swift */; };
+		77F43D7B1A8963CE00FEF24C /* DVD.png in Resources */ = {isa = PBXBuildFile; fileRef = 77F43D791A8963CE00FEF24C /* DVD.png */; };
+		77F43D7C1A8963CE00FEF24C /* BoxOffice.png in Resources */ = {isa = PBXBuildFile; fileRef = 77F43D7A1A8963CE00FEF24C /* BoxOffice.png */; };
 		77FAB7291A88438F009E2C4F /* BoxOfficeMoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FAB7281A88438F009E2C4F /* BoxOfficeMoviesViewController.swift */; };
 		77FAB72B1A887F72009E2C4F /* BoxOfficeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77FAB72A1A887F72009E2C4F /* BoxOfficeTableViewCell.swift */; };
 		FCBB82996241C0F78D81A070 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF9C1228FCC5EBDB56216EB /* libPods.a */; };
@@ -42,6 +44,8 @@
 		775FBC031A85B01300CA8345 /* MovieDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailsViewController.swift; sourceTree = "<group>"; };
 		778C8B751A8724AD002F5DA0 /* RottenTomatoes-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RottenTomatoes-Bridging-Header.h"; sourceTree = "<group>"; };
 		77F43D771A88C47700FEF24C /* DVDMoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DVDMoviesViewController.swift; sourceTree = "<group>"; };
+		77F43D791A8963CE00FEF24C /* DVD.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DVD.png; sourceTree = "<group>"; };
+		77F43D7A1A8963CE00FEF24C /* BoxOffice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BoxOffice.png; sourceTree = "<group>"; };
 		77FAB7281A88438F009E2C4F /* BoxOfficeMoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoxOfficeMoviesViewController.swift; sourceTree = "<group>"; };
 		77FAB72A1A887F72009E2C4F /* BoxOfficeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoxOfficeTableViewCell.swift; sourceTree = "<group>"; };
 		89340DD8E0F2DCC842661199 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -151,6 +155,8 @@
 		778C8B781A875B84002F5DA0 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				77F43D791A8963CE00FEF24C /* DVD.png */,
+				77F43D7A1A8963CE00FEF24C /* BoxOffice.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -245,9 +251,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77F43D7B1A8963CE00FEF24C /* DVD.png in Resources */,
 				775FBBE71A85833400CA8345 /* Main.storyboard in Resources */,
 				775FBBEC1A85833400CA8345 /* LaunchScreen.xib in Resources */,
 				775FBBE91A85833400CA8345 /* Images.xcassets in Resources */,
+				77F43D7C1A8963CE00FEF24C /* BoxOffice.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

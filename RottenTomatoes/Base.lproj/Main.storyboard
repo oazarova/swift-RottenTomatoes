@@ -8,7 +8,7 @@
         <scene sceneID="QZ0-DI-YbJ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="05Z-OM-AUl" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Box Office" image="Image-1" id="27S-fg-Ufk"/>
+                    <tabBarItem key="tabBarItem" title="Box Office" image="BoxOffice" id="27S-fg-Ufk"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="BtU-Qm-bI0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -206,7 +206,7 @@
         <scene sceneID="xp0-AQ-Pk7">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sft-wT-seL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="DVD" image="Image" id="RYo-Qx-d9Q"/>
+                    <tabBarItem key="tabBarItem" title="DVD" image="DVD" id="RYo-Qx-d9Q"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5Vy-gq-3NP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -283,7 +283,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Image" width="24" height="23"/>
-        <image name="Image-1" width="24" height="23"/>
+        <image name="BoxOffice" width="30" height="30"/>
+        <image name="DVD" width="30" height="30"/>
     </resources>
 </document>
