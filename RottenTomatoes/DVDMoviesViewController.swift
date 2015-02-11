@@ -47,7 +47,7 @@ class DVDMoviesViewController: UIViewController, UITableViewDataSource{
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let movie = self.moviesArray![indexPath.row] as NSDictionary
-        let cell = tableView.dequeueReusableCellWithIdentifier("olgaa.myMovieCell") as BoxOfficeTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("olgaa.dvdCell") as DVDTableViewCell
         cell.movieTitleLabel.text = movie["title"] as NSString
         
         // Get url's for movie posters
